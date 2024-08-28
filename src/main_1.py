@@ -9,7 +9,7 @@ col1.header(':blue[_Welcome to_]', anchor=False)
 col1.title(':blue[Customer Outflow Analyzer!]', anchor=False)
 
 with col1:
-  in_col1_1, in_col2_1 = st.columns([0.3, 0.7], vertical_alignment='center')
+  in_col1_1, in_col2_1 = st.columns([0.35, 0.65], vertical_alignment='center')
 
 inst_button = in_col1_1.button('View instructions 📄')               # instruction button
 start_button = in_col2_1.button('Start Analysis! 🚀')                # start button
