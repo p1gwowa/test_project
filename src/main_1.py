@@ -14,7 +14,7 @@ with col1:
 inst_button = in_col1_1.button('View instructions 📄')               # instruction button
 start_button = in_col2_1.button('Start Analysis! 🚀')                # start button
 
-img = Image.open('logo.png')
+img = Image.open('src/logo.png')
 
 with col2:
   in_col1_2, in_col2_2, in_col3_2 = st.columns(3, vertical_alignment='center')  # page layout
@@ -30,7 +30,7 @@ for _ in range(8):
 
 @st.dialog("Instruction")          # instruction dialog window
 def inst():
-  with open('Instructions_for_the_User.txt', 'r') as file:
+  with open('src/Instructions_for_the_User.txt', 'r', encoding='utf-8') as file:
     instructions = file.read()
     st.write(instructions)
     
