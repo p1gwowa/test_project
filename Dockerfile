@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY /src /app/src/
 COPY /pages /app/pages/
+COPY requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt
 
