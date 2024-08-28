@@ -38,5 +38,5 @@ if inst_button:
   inst()
     
 if start_button:
-  st.switch_page('analysis.py')
+  st.switch_page('pages/analysis.py')
 
