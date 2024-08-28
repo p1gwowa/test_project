@@ -3,6 +3,16 @@ from PIL import Image
 
 st.set_page_config(layout='wide')                                  # page layout
 
+page_bg_img = '''
+<style>
+    .stApp {
+        background-color: rgb(255, 204, 153);
+    }
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
 col1, col2 = st.columns([0.35, 0.65], vertical_alignment='center')   # page layout
 
 col1.header(':blue[_Welcome to_]', anchor=False)
@@ -17,9 +27,9 @@ start_button = in_col2_1.button('Start Analysis! 🚀')                # start b
 img = Image.open('src/logo.png')
 
 with col2:
-  in_col1_2, in_col2_2, in_col3_2 = st.columns(3, vertical_alignment='center')  # page layout
+  in_col1_2, in_col2_2, in_col3_2 = st.columns([1, 2, 1], vertical_alignment='center')  # page layout
 
-for _ in range(8):
+for _ in range(9):
   in_col2_2.write('')
 
 in_col2_2.image(img, width=350, output_format="PNG", use_column_width=False)    # team logo
